@@ -1,0 +1,350 @@
+/* ===== IMAGEM DE FUNDO COMO MARCA D’ÁGUA ===== */
+body::before {
+    content: ""; /* Cria um pseudo-elemento vazio */
+    position: fixed; /* Fixa a imagem no fundo da tela, mesmo ao rolar a página */
+    top: 0; /* Alinha no topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Ocupa 100% da largura da tela */
+    height: 100%; /* Ocupa 100% da altura da tela */
+    background: url('./assets/img/fundo.jpg') no-repeat center/cover; /* Define a imagem de fundo, centralizada e cobrindo toda a área */
+    opacity: 0.2; /* Deixa a imagem transparente como marca d’água */
+    z-index: -1; /* Coloca a imagem atrás de todos os outros elementos */
+}
+
+/* ===== CABEÇALHO PRINCIPAL COM ESTILO ARREDONDADO E SOMBRA ===== */
+.cabecalho {
+    width: 96%;                           /* Largura quase total */
+    background-color: #e4d4d1;           /* usei a cor da imagem da logo */
+    padding: 20px 30px;                  /* Espaço interno */
+    border-radius: 20px;                 /* Borda arredondada moderna */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+  
+    display: flex;                       /* Layout em linha com flexbox */
+    justify-content: space-between;     /* Itens separados nas extremidades */
+    align-items: center;                /* Alinhados verticalmente no centro */
+    margin: 20px auto 0;                /* Margem superior e centralização horizontal */
+  }
+  
+  /* ===== ÁREA DA LOGO + TEXTO "NOVO LAR" ===== */
+  .logo_area {
+    display: flex;                       /* Layout em linha */
+    align-items: center;                /* Alinhamento vertical central */
+    gap: 15px;                           /* Espaço entre imagem e texto */
+  }
+  
+  .logo {
+    height: 80px;                        /* Altura reduzida para se ajustar melhor ao novo cabeçalho */
+  }
+  
+  #frase_logo {
+    font-family: 'Poppins', sans-serif; /* Fonte personalizada */
+    font-size: 30px;                     /* Tamanho do texto */
+    font-weight: bold;                  /* Negrito */
+    color: #f19b4e;                      /* Laranja moderno */
+  }
+  
+  /* ===== MENU DE BOTÕES CENTRAIS ===== */
+  .botoes {
+    display: flex;                       /* Layout em linha */
+    gap: 20px;                           /* Espaço entre os botões */
+  }
+  
+  .botao-cabecalho {
+    font-family: 'Poppins', sans-serif; /* Fonte elegante */
+    background-color: #f19b4e;          /* Fundo laranja */
+    color: white;                       /* Texto branco */
+    border: none;                       /* Sem borda padrão */
+    padding: 10px 18px;                 /* Espaço interno confortável */
+    font-size: 16px;                    /* Tamanho legível */
+    border-radius: 25px;                /* Borda bem arredondada */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15); /* Sombra para dar profundidade */
+    cursor: pointer;                    /* Mãozinha ao passar o mouse */
+    transition: transform 0.2s, background-color 0.3s; /* Animação suave */
+  }
+  
+  .botao-cabecalho:hover {
+    background-color: #e48b2f;          /* Tom mais escuro no hover */
+    transform: translateY(-2px);        /* Efeito de "levantar" */
+  }
+  
+  /* ===== ÁREA DE LOGIN E CADASTRO ===== */
+  .cadastro_entrar {
+    display: flex;                       /* Itens em linha */
+    align-items: center;                /* Alinhamento vertical */
+    gap: 12px;                           /* Espaço entre os botões */
+  }
+  
+  /* Botão "Entrar" com estilo limpo */
+  #entrar {
+    background: none;                   /* Sem fundo */
+    border: none;                       /* Sem borda */
+    color: #eb7c1c;                     /* Laranja forte */
+    font-size: 18px;                    /* Tamanho do texto */
+    cursor: pointer;                    /* Cursor de clique */
+    font-family: 'Poppins', sans-serif;/* Fonte padrão do site */
+  }
+  
+  /* Botão "Cadastro" com estilo destacado */
+  #cadastro {
+    background-color: #f19b4e;          /* Fundo laranja */
+    color: #fff8e1;                     /* Texto claro */
+    border: none;                       /* Sem borda */
+    padding: 8px 18px;                  /* Espaço interno */
+    font-size: 16px;                    /* Tamanho do texto */
+    font-family: 'Poppins', sans-serif;/* Fonte consistente */
+    font-weight: bold;                  /* Texto em negrito */
+    border-radius: 25px;                /* Bordas bem arredondadas */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Sombra para destaque */
+    cursor: pointer;                    /* Cursor de clique */
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  #cadastro:hover {
+    background-color: #e48b2f;          /* Tom mais escuro no hover */
+    transform: scale(1.05);             /* Aumenta levemente ao passar o mouse */
+  }
+
+  /* ===== BLOCO FLEXÍVEL PARA O CONTEÚDO PRINCIPAL (cards + lateral) ===== */
+.conteudo-flex {
+    display: flex;              /* Layout em linha (horizontal) para os filhos */
+    justify-content: center;    /* Centraliza os elementos filhos horizontalmente */
+    gap: 40px;                  /* Espaço entre os elementos (ex: cards e barra lateral) */
+    padding: 40px;              /* Espaço interno ao redor do conteúdo */
+    flex-wrap: wrap;            /* Permite que os elementos quebrem linha se necessário (em telas pequenas) */
+}
+
+/* BLOCO COM OS CARDS */
+.meio1 {
+    /*border: 2px solid black;*/ /* Comentado: usado só pra visualizar */
+    max-width: 950px;           /* Largura máxima da área que contém os cards */
+}
+
+/* SEÇÃO DE BICHINHOS */
+.bichinhos {
+    padding: 30px;              /* Espaçamento interno ao redor da seção */
+    font-family: 'Poppins', sans-serif;  /* Fonte estilosa e moderna */
+}
+
+/* TÍTULO DA SEÇÃO */
+.bichinhos h2 {
+    color: #f19b4e;             /* Laranja suave */
+    font-size: 28px;            /* Tamanho do título */
+    /*border: 2px solid black;*/ /* Só pra visualizar o espaço, está comentado */
+    max-width: 900px;           /* Largura máxima do título (igual ao container de cards) */
+}
+
+/* SUBTÍTULO */
+.bichinhos p {
+    font-size: 18px;            /* Tamanho da fonte do parágrafo */
+    color: #555;                /* Cinza escuro, bom contraste */
+    /*border: 2px solid black;*/ /* Só pra visualização */
+    max-width: 900px;           /* Mesma largura do título e dos cards */
+}
+
+/* CONTAINER FLEX DOS CARDS */
+.card-container {
+    display: flex;              /* Alinha os cards horizontalmente */
+    gap: 25px;                  /* Espaço entre cada card */
+    margin-top: 20px;           /* Espaço acima do container */
+    flex-wrap: wrap;            /* Permite que os cards "quebrem" para a próxima linha se não couberem */
+    /*border: 2px solid black;*/ /* Para visualizar durante desenvolvimento */
+    max-width: 900px;           /* Largura máxima do container */
+}
+
+/* CARD INDIVIDUAL */
+.card {
+    background-color: white;                /* Fundo branco para destacar o card */
+    border-radius: 12px;                    /* Cantos arredondados */
+    width: 150px;                           /* Largura fixa do card */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);  /* Sombra leve para dar profundidade */
+    overflow: hidden;                       /* Esconde partes que saem da borda */
+    position: relative;                     /* Necessário para posicionar o selo .status */
+    text-align: center;                     /* Centraliza o conteúdo dentro do card */
+}
+
+.card img {
+    width: 100%;                /* Imagem ocupa toda a largura do card */
+    height: 150px;              /* Altura fixa */
+    object-fit: cover;          /* Garante que a imagem preencha o espaço sem distorcer */
+}
+
+/* NOME DO BICHINHO */
+.nome-bichinho {
+    background: none;           /* Sem fundo */
+    border: none;               /* Sem borda */
+    color: #e4a90a;             /* Amarelo escuro (destaque) */
+    font-size: 20px;            /* Tamanho da fonte */
+    font-weight: bold;          /* Deixa o texto em negrito */
+    margin: 10px 0 5px;         /* Margem superior, inferior e entre linhas */
+    cursor: pointer;            /* Mãozinha ao passar o mouse */
+    font-family: 'Poppins', sans-serif;  /* Fonte estilosa */
+    text-decoration: none;      /* Remove sublinhado (caso fosse um link) */
+    transition: color 0.2s;     /* Transição suave na mudança de cor ao interagir */
+}
+
+/* CIDADE/ESTADO */
+.card p {
+    font-size: 14px;            /* Fonte menor */
+    color: #555;                /* Cinza discreto */
+    margin-bottom: 10px;        /* Espaço abaixo do parágrafo */
+}
+
+/* SELO DE ADOTADO */
+.status {
+    background-color: #e4a90a;  /* Cor de fundo do selo */
+    color: white;               /* Cor da fonte (contrasta bem) */
+    font-weight: bold;          /* Negrito */
+    padding: 5px 0;             /* Espaço interno vertical */
+    width: 100%;                /* Ocupa toda a largura do card */
+    position: absolute;         /* Posicionamento absoluto dentro do card */
+    bottom: 80px;               /* Distância do fundo da imagem (ajusta posição do selo) */
+    left: 0;                    /* Começa a partir da esquerda */
+}
+
+/* ===== BOTÃO "VER MAIS PETS" ===== */
+.ver-mais-container {
+    margin-top: 30px;           /* Espaço acima do botão */
+    display: flex;              /* Usado para centralizar horizontalmente */
+    justify-content: center;    /* Centraliza o botão dentro da div */
+    max-width: 900px;           /* Mesma largura que os cards */
+    margin-inline: auto;        /* Centraliza horizontalmente a div como um todo */
+}
+  
+.ver-mais-btn {
+    background-color: #f19b4e;         /* Laranja suave para o botão */
+    color: #fff8e1;                    /* Cor clara do texto */
+    border: none;                      /* Remove a borda padrão */
+    padding: 10px 20px;                /* Espaço interno (vertical e horizontal) */
+    border-radius: 30px;               /* Deixa o botão bem arredondado */
+    font-size: 18px;                   /* Tamanho do texto */
+    font-family: 'Poppins', sans-serif; /* Fonte personalizada */
+    font-weight: bold;                /* Deixa o texto em negrito */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra para destacar */
+    cursor: pointer;                  /* Muda o cursor para mãozinha */
+    transition: background-color 0.3s, transform 0.2s; /* Animação suave ao interagir */
+}
+
+.ver-mais-btn:hover {
+    background-color: #e48b2f;        /* Escurece o botão ao passar o mouse */
+    transform: translateY(-2px);      /* Dá um pequeno "salto" pra cima */
+}
+
+/* ===== BLOCO LATERAL "POR QUE ADOTAR?" ===== */
+.meio2 {
+    max-width: 300px;    /* Largura máxima da caixa lateral */
+    flex: 1;             /* Faz com que ocupe o espaço restante se necessário */
+}
+
+/* ESTILO DA CAIXA */
+.porque_adotar {
+    background-color: #fff8e1;       /* Cor de fundo bem clarinha */
+    padding: 20px;                   /* Espaço interno */
+    border-radius: 12px;             /* Bordas arredondadas */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.porque_adotar h3 {
+    color: #f4a261;                  /* Laranja suave */
+    font-size: 1.4rem;               /* Tamanho do título */
+    margin-bottom: 10px;            /* Espaço abaixo do título */
+}
+
+.porque_adotar p {
+    color: #555;                     /* Cinza escuro para o texto */
+    font-size: 1rem;                 /* Tamanho padrão de texto */
+    line-height: 1.5;               /* Espaçamento entre linhas */
+}
+
+/* ===== OPCIONAL: RESPONSIVIDADE (MELHORA EM TELAS MENORES) ===== */
+@media (max-width: 768px) {
+    .conteudo-flex {
+        flex-direction: column;      /* Empilha os elementos verticalmente */
+        align-items: center;         /* Centraliza horizontalmente */
+    }
+
+    .meio2 {
+        max-width: 90%;              /* Reduz a largura da lateral */
+    }
+
+    .card-container {
+        justify-content: center;     /* Centraliza os cards */
+    }
+}
+
+/* REDES SOCIAIS */
+.redes_sociais {
+    display: flex;               /* Layout flexível */
+    gap: 15px;                   /* Espaço entre os ícones */
+    justify-content: center;    /* Centraliza os ícones */
+    margin-top: 20px;           /* Espaço acima da seção */
+}
+
+.redes_sociais img {
+    width: 40px;                /* Tamanho dos ícones */
+    height: 40px;
+    border-radius: 50%;         /* Ícones em formato circular */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);  /* Sombra suave */
+    transition: transform 0.2s ease;        /* Animação ao passar o mouse */
+    cursor: pointer;            /* Cursor de mãozinha */
+}
+
+.redes_sociais img:hover {
+    transform: scale(1.1);      /* Aumenta um pouco ao passar o mouse */
+}
+
+/* BLOCO FINAL DE CONTATO */
+.contato_final {
+    background-color: #f0b581;  /* Cor de fundo semelhante ao botão */
+    padding: 30px 20px;         /* Espaçamento interno */
+    text-align: center;         /* Centraliza o conteúdo */
+    margin-top: 40px;           /* Espaço acima da seção */
+    border-radius: 20px;        /* Bordas arredondadas */
+    color: white;               /* Cor do texto */
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra leve */
+}
+
+.contato_final p {
+    font-size: 18px;            /* Tamanho do texto */
+    font-weight: bold;          /* Negrito */
+    margin-bottom: 20px;        /* Espaço abaixo do parágrafo */
+}
+
+/* BOTÃO DESTAQUE FINAL */
+.botao-destaque {
+    background-color: #f19b4e;  /* Laranja padrão */
+    color: white;               /* Texto branco */
+    border: none;
+    padding: 10px 25px;         /* Espaço interno */
+    border-radius: 25px;        /* Bordas arredondadas */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Sombra de profundidade */
+    transition: transform 0.2s; /* Animação ao interagir */
+}
+
+.botao-destaque:hover {
+    transform: scale(1.05);     /* Aumenta levemente o botão */
+}
+
+/* ===== ÍCONES DE REDES SOCIAIS ===== */
+.redes_sociais {
+    display: flex;              /* Coloca os ícones lado a lado (em linha) */
+    justify-content: center;    /* Centraliza os ícones horizontalmente */
+    gap: 20px;                  /* Espaçamento de 20px entre cada ícone */
+    margin-top: 20px;           /* Distância de 20px do elemento acima */
+  }
+  
+  .redes_sociais img {
+    width: 40px;                /* Largura de cada ícone */
+    height: 40px;               /* Altura de cada ícone */
+    border-radius: 50%;         /* Deixa o ícone completamente redondo */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15); /* Sombra leve para dar profundidade */
+    transition: transform 0.2s ease;       /* Animação suave ao passar o mouse */
+    cursor: pointer;            /* Cursor de mãozinha ao passar o mouse (indica que é clicável) */
+  }
+  
+  .redes_sociais img:hover {
+    transform: scale(1.1);      /* Ao passar o mouse, aumenta levemente o ícone */
+  }

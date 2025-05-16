@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho do site -->
+    <div class="container">
+      <div class="cabecalho">
+  
+        <!-- Logo e nome do site -->
+        <div class="logo_area">
+          <img src="./assets/img/logo.png" class="logo">
+          <h1 id="frase_logo">NOVO LAR</h1>
+        </div>
+  
+        <!-- Botões do meio -->
+        <div class="botoes">
+          <button class="botao-cabecalho">Quem somos</button>
+          <button class="botao-cabecalho">Quero adotar</button>
+          <button class="botao-cabecalho">Quero ajudar</button>
+        </div>
+  
+        <!-- Botões de login e cadastro -->
+        <div class="cadastro_entrar">
+          <button id="entrar">Entrar</button>
+          <button id="cadastro">Cadastre-se</button>
+        </div>
+  
+      </div>
+    </div>
+  
+    <!-- ENVOLVENDO os blocos dos cards e da caixa lateral com uma div flexível -->
+    <div class="conteudo-flex">
+  
+      <!-- Bloco da seção de bichinhos -->
+      <div class="meio1">
+        <section class="bichinhos">
+          <!-- Título da seção -->
+          <h2>Novos peludos por aqui</h2>
+  
+          <!-- Subtítulo -->
+          <p>Nosso site está cheio de doguinhos e gatinhos ansiosos por uma família. Vem ver!</p>
+  
+          <!-- Container dos cards -->
+          <div class="card-container">
+  
+            <!-- Card 1 -->
+            <div class="card">
+              <img src="./assets/img/cao1.png" alt="Black">
+              <button class="nome-bichinho">Black</button>
+              <p>Rio de Janeiro, RJ</p>
+            </div>
+  
+            <!-- Card 2 -->
+            <div class="card adotado">
+              <img src="./assets/img/gato1.png" alt="Mini">
+              <span class="status">ADOTADO</span>
+              <button class="nome-bichinho">Mini</button>
+              <p>Rio de Janeiro, RJ</p>
+            </div>
+  
+            <!-- Card 3 -->
+            <div class="card">
+              <img src="./assets/img/cao2.png" alt="Thor">
+              <button class="nome-bichinho">Thor</button>
+              <p>Igarassu, PE</p>
+            </div>
+  
+            <!-- Card 4 -->
+            <div class="card">
+              <img src="./assets/img/gato2.png" alt="Nenê">
+              <button class="nome-bichinho">Nenê</button>
+              <p>Rio de Janeiro, RJ</p>
+            </div>
+  
+            <!-- Card 5 -->
+            <div class="card adotado">
+              <img src="./assets/img/cao3.png" alt="Faisca">
+              <span class="status">ADOTADO</span>
+              <button class="nome-bichinho">Faisca</button>
+              <p>São Paulo, SP</p>
+            </div>
+            
+            <!-- Botão "Ver mais pets" -->
+            <div class="ver-mais-container">
+                <button class="ver-mais-btn">Ver mais pets</button>
+            </div>
+          </div>
+        </section>
+      </div>
+  
+      <!-- Caixa lateral com a mensagem "Por que adotar?" -->
+      <div class="meio2">
+        <div class="porque_adotar">
+          <h3>Por que adotar?</h3>
+          <p>
+            Adotar um pet salva vidas e enche sua casa de amor! 
+            Ao adotar, você dá uma nova chance para um animalzinho que só quer carinho e um lar. 
+            <br>
+            Sabe aquele amor verdadeiro, que não pede nada em troca além de um carinho e um espacinho no sofá? 
+            Adotar um bichinho é assim! Eles vêm cheios de gratidão, lambidas e ronrons. 
+            Além disso, você ainda ajuda a dar uma nova chance pra quem só quer fazer parte de uma família. 
+            Bora mudar uma vida (e a sua também)?
+        </p>
+        </div>
+      </div>
+  
+    </div> <!-- fim da div conteudo-flex -->
+
+    <footer class="contato_final">
+        <p>Gostaria de adotar, colaborar com nossa missão ou divulgar um bichinho?</p>
+        <button class="botao-destaque">Fale conosco!</button>
+      
+        <div class="redes_sociais">
+          <a href="#"><img src="./assets/img/face.png" alt="Facebook"></a>
+          <a href="#"><img src="./assets/img/insta.png" alt="Instagram"></a>
+          <a href="#"><img src="./assets/img/wpp.png" alt="WhatsApp"></a>
+        </div>
+    </footer>
+  
+  </body>
+
+</html>
