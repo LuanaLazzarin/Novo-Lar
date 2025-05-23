@@ -14,7 +14,7 @@ body::before {
 /* ===== CABEÇALHO PRINCIPAL COM ESTILO ARREDONDADO E SOMBRA ===== */
 .cabecalho {
     width: 96%;                           /* Largura quase total */
-    background-color: #e4d4d1;           /* usei a cor da imagem da logo */
+    background-color: #b96352;           /* usei a cor da imagem da logo */
     padding: 20px 30px;                  /* Espaço interno */
     border-radius: 20px;                 /* Borda arredondada moderna */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
