@@ -14,7 +14,7 @@ body::before {
 /* ===== CABEÇALHO PRINCIPAL COM ESTILO ARREDONDADO E SOMBRA ===== */
 .cabecalho {
     width: 96%;                           /* Largura quase total */
-    background-color: #e4d4d1;           /* usei a cor da imagem da logo */
+    background-color: #b96352;           /* usei a cor da imagem da logo */
     padding: 20px 30px;                  /* Espaço interno */
     border-radius: 20px;                 /* Borda arredondada moderna */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
@@ -153,7 +153,7 @@ body::before {
 
 /* CARD INDIVIDUAL */
 .card {
-    background-color: white;                /* Fundo branco para destacar o card */
+    background-color: rgb(207, 168, 135);                /* Fundo branco para destacar o card */
     border-radius: 12px;                    /* Cantos arredondados */
     width: 150px;                           /* Largura fixa do card */
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);  /* Sombra leve para dar profundidade */
@@ -172,7 +172,7 @@ body::before {
 .nome-bichinho {
     background: none;           /* Sem fundo */
     border: none;               /* Sem borda */
-    color: #e4a90a;             /* Amarelo escuro (destaque) */
+    color: #141004;             /* Amarelo escuro (destaque) */
     font-size: 20px;            /* Tamanho da fonte */
     font-weight: bold;          /* Deixa o texto em negrito */
     margin: 10px 0 5px;         /* Margem superior, inferior e entre linhas */
@@ -191,7 +191,7 @@ body::before {
 
 /* SELO DE ADOTADO */
 .status {
-    background-color: #e4a90a;  /* Cor de fundo do selo */
+    background-color: #d3433e;  /* Cor de fundo do selo */
     color: white;               /* Cor da fonte (contrasta bem) */
     font-weight: bold;          /* Negrito */
     padding: 5px 0;             /* Espaço interno vertical */
@@ -225,7 +225,7 @@ body::before {
 }
 
 .ver-mais-btn:hover {
-    background-color: #e48b2f;        /* Escurece o botão ao passar o mouse */
+    background-color: #be460f;        /* Escurece o botão ao passar o mouse */
     transform: translateY(-2px);      /* Dá um pequeno "salto" pra cima */
 }
 
@@ -294,7 +294,7 @@ body::before {
 
 /* BLOCO FINAL DE CONTATO */
 .contato_final {
-    background-color: #f0b581;  /* Cor de fundo semelhante ao botão */
+    background-color: #b96352;  /* Cor de fundo semelhante ao botão */
     padding: 30px 20px;         /* Espaçamento interno */
     text-align: center;         /* Centraliza o conteúdo */
     margin-top: 40px;           /* Espaço acima da seção */
